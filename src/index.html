@@ -8,10 +8,120 @@
     <title>Portfolio - Développeur web et web mobile - Damien Laitani</title>
     <link rel="stylesheet" href="./assets/scss/style.scss" />
     <script type="module" src="./assets/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/1b4125165a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
+        <header class="header">
+            <div class="header__left-side">
+                <nav class="header__nav-menu">
+                    <ul class="nav__menu">
+                        <li class="nav__menu__item">A propos</li>
+                        <li class="nav__menu__item">Réalisations</li>
+                        <li class="nav__menu__item">Compétences</li>
+                        <li class="nav__menu__item">Contact</li>
+                    </ul>
+                </nav>
+                <div class="arrow__bottom">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+            <div class="header__right-side">
+                <div class="header__description">
+                    <p class="full-name">Damien Laitani</p>
+                    <h1 class="job">Développeur web et web mobile</h1>
+                </div>
+                <div class="header__picture">
+                    <img src="./assets/images/photo_profil.jpg" alt="photo de profil - damien laitani" width="50px">
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__apropos">
+                <h2 class="main__apropos__title">A propos</h2>
+                <p class="main__apropos__text">Après 10 ans comme Pâtissier, me voilà maintenant développeur Web junior.</p>
+                <p class="main__apropos__text">Je suis actuellement à la recherche d'une alternance pour engranger ma première expérience en entreprise. Grâce à un projet de groupe (5 membres) élaboré lors de ma formation chez O'clock, j'ai pu entrapercevoir le monde du développement web durant un mois. Nous avons travaillé avec la méthode Scrum suivant le développement Agile. Un mois divisé en 4 sprints pour créer une application web en partant d'une simple idée, en passant par un MVP et jusqu'à sa mise en ligne.</p>
+                <p class="main__apropos__text">Voici donc mon projet le plus aboutie : Cat to home</p>
+            </section>
+            <section class="main__realisations">
+                <h2 class="main__competences__title">Mes réalisations</h2>
+                <div class="realisation__card">
+                    <img src="./assets/images/photo_profil.jpg" alt="Capture d'écran du site Cat to home" width="50px">
+                    <h3><a href="https://cat-to-home.fr">Cat to home</a></h3>
+                    <p class="text__hidden">Projet de fin de formation, réalisé en 1 mois</p>
+                </div>
+                <div class="realisation__card">
+                    <img src="./assets/images/photo_profil.jpg" alt="Capture d'écran du Backoffice d'application" width="50px">
+                    <h3><a href="">Backoffice d'application</a></h3>
+                    <p class="text__hidden">Projet réalisé après la formation, utilisant le Framework Laravel.</p>
+                </div>
+                <div class="realisation__card">
+                    <img src="./assets/images/photo_profil.jpg" alt="Capture d'écran du jeu Mémorie" width="50px">
+                    <h3><a href="https://damien-laitani.github.io/Memory-game-In-VanillaJS/">Jeu du Memory</a></h3>
+                    <p class="text__hidden">Mini jeu réalisé avant la formation O'clock, en Vanilla JS</p>
+                </div>
+                <div class="realisation__card">
+                    <img src="./assets/images/photo_profil.jpg" alt="Capture d'écran du jeu du serpent" width="50px">
+                    <h3><a href="https://damien-laitani.github.io/Snake-game-In-VanillaJS/">Jeu du serpent</a></h3>
+                    <p class="text__hidden">Mini jeu réalisé avant la formation O'clock, en Vanilla JS</p>
+                </div>
+            </section>
+            <section class="main__competences">
+                    <h2 class="main__competences__title">Mes compétences</h2>
+                <div class="competences__logos">
+                    <h3 class="competences__logos__title"><i class="fa-solid fa-graduation-cap"></i> Hards Skills</h3>
+                    <img src="./assets/images/Laravel_logo.svg" alt="Logo du Framework Laravel" width="50px">
+                    <img src="./assets/images/HTML5_logo.svg" alt="Logo du langage HTML5" width="50px">
+                    <img src="./assets/images/CSS3_logo.svg" alt="Logo du langage CSS3" width="50px">
+                    <img src="./assets/images/JavaScript_logo.svg" alt="Logo du langage Javascript" width="50px">
+                    <img src="./assets/images/PHP_logo.svg" alt="Logo du langage PHP" width="100px">
+                    <img src="assets/images/Vuejs_logo.svg" alt="Logo du Framework Vue.js" width="50px">
+                    <img src="assets/images/WordPress_logo.svg" alt="Logo du CMS WordPress" width="50px">
+                    <img src="assets/images/MySQL_logo.svg" alt="Logo du système de gestion de base de données MySQL" width="50px">
+                    <img src="assets/images/Bootstrap_logo.svg" alt="Logo de la librairie Bootstrap" width="50px">
+                    <img src="assets/images/Rest_api_logo.svg" alt="Logo de l'API REST" width="50px">
+                </div>
+                <div class="competences__soft-skills">
+                    <h3 class="competences__soft-skills__title"><i class="fa-solid fa-gears"></i> Softs Skills</h3>
+                    <p class="competences__soft-skills__item">Travail en équipe</p>
+                    <p class="competences__soft-skills__item">Autonomie</p>
+                    <p class="competences__soft-skills__item">Curiosité</p>
+                    <p class="competences__soft-skills__item">Rigueur</p>
+                </div>
+                <div class="competences__gestion-projet">
+                    <h3 class="competences__gestion-projet__title"><i class="fa-solid fa-file-circle-check"></i> Gestion de projet</h3>
+                    <p class="competences__gestion-projet__item">Wireframes</p>
+                    <p class="competences__gestion-projet__item">User Stories</p>
+                    <p class="competences__gestion-projet__item">Méthode Scrum/Agile</p>
+                    <p class="competences__gestion-projet__item">Versioning - Git/GitHub</p>
+                </div>
+                <div class="competences__languages">
+                    <h3 class="competences__languages__title"><i class="fa-solid fa-globe"></i> Langues</h3>
+                    <p class="competences__languages__item">Français</p>
+                    <p class="competences__languages__item">Anglais</p>
+                </div>
 
+            </section>
+            <section class="main__contact">
+                <h2 class="main__competences__title">Me contacter</h2>
+                <div class="form-contact">
+                    <form action="" method="post">
+                        <label for="name">Votre nom</label>
+                        <input type="text" name="name" id="name">
+                        <label for="content">Votre message</label>
+                        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="socials__links">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <p>&copy; 2022. Damien Laitani - portfolio</p>
+        </footer>
     </div>
 </body>
 </html>
