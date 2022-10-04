@@ -1,0 +1,37 @@
+.main__realisations {
+    margin-top: 1rem;
+
+  .main__competences__title {
+    margin-bottom: 1rem;
+  }
+
+  .realisation__card {
+    background-color: #eaf8f7;
+    width: 90%;
+    margin: 2.5rem auto;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 1px 2px 5px #74c2c6;
+    border-radius: 0.5rem;
+
+    .card__picture {
+      border: 1px solid #74c2c6;
+    }
+
+    .card__picture,
+    .card__title {
+      margin-bottom: 1.5rem;
+    }
+
+    .card__title a {
+      font-size: 2rem;
+      color: black;
+      line-height: 1.2;
+    }
+
+    .card__text {
+      text-align: left;
+      line-height: 1.2;
+    }
+  }
+}
