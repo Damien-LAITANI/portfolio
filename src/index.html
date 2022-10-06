@@ -46,7 +46,7 @@
                 <p class="main__apropos__text">Je suis actuellement à la recherche d'une alternance pour engranger ma première expérience en entreprise. Grâce à un projet de groupe (5 membres) élaboré lors de ma formation chez O'clock, j'ai pu entrapercevoir le monde du développement web durant un mois. Nous avons travaillé avec la méthode Scrum suivant le développement Agile. Un mois divisé en 4 sprints pour créer une application web en partant d'une simple idée, en passant par un MVP et jusqu'à sa mise en ligne.</p>
             </section>
             <section class="main__realisations">
-                <h2 class="main__competences__title">Mes réalisations</h2>
+                <h2 class="main__competences__title">Réalisations</h2>
                 <div class="realisation__card">
                     <img class="card__picture" src="./assets/images/capture_cat_to_home.png" alt="Capture d'écran du site Cat to home" width="200px">
                     <h3 class="card__title"><a href="https://cat-to-home.fr">Cat to home</a></h3>
@@ -69,13 +69,13 @@
                 </div>
             </section>
             <section class="main__competences">
-                <h2 class="main__competences__title">Mes compétences</h2>
+                <h2 class="main__competences__title">Compétences</h2>
                 <div class="competence competences__logos">
                     <h3 class="competences__title competences__title__logos"><i class="fa-solid fa-graduation-cap"></i> Hards Skills</h3>
                     <div class="container__logos">
                         <div class="container__logo">
-                            <img src="./assets/images/Laravel_logo.svg" alt="Logo du Framework Laravel" width="48px">
-                            <p>Laravel</p>
+                            <img src="./assets/images/JavaScript_logo.svg" alt="Logo du langage Javascript" width="50px">
+                            <p>Javascript</p>
                         </div>
                         <div class="container__logo">
                         <img src="./assets/images/HTML5_logo.svg" alt="Logo du langage HTML5" width="50px">
@@ -86,12 +86,12 @@
                             <p>CSS3</p>
                         </div>
                         <div class="container__logo">
-                            <img src="./assets/images/JavaScript_logo.svg" alt="Logo du langage Javascript" width="50px">
-                            <p>Javascript</p>
-                        </div>
-                        <div class="container__logo">
                             <img src="./assets/images/PHP_logo.svg" alt="Logo du langage PHP" width="92px">
                             <p>PHP</p>
+                        </div>
+                        <div class="container__logo">
+                            <img src="./assets/images/Laravel_logo.svg" alt="Logo du Framework Laravel" width="48px">
+                            <p>Laravel</p>
                         </div>
                         <div class="container__logo">
                             <img src="assets/images/Vuejs_logo.svg" alt="Logo du Framework Vue.js" width="50px">
@@ -137,13 +137,24 @@
 
             </section>
             <section class="main__contact">
-                <h2 class="main__competences__title">Me contacter</h2>
-                <div class="form-contact">
+                <h2 class="main__competences__title">Contact</h2>
+                <div class="for__contact">
                     <form action="" method="post">
-                        <label for="name">Votre nom</label>
-                        <input type="text" name="name" id="name">
-                        <label for="content">Votre message</label>
-                        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                        <div class="form__contact__item">
+                            <label for="name">Votre nom</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form__contact__item">
+                            <label for="email">Votre e-mail</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="form__contact__item">
+                            <label for="content">Votre message</label>
+                            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="form__contact__item">
+                        <button class="btn__contact" type="submit">Envoyer</button>
+                        </div>
                     </form>
                 </div>
             </section>
