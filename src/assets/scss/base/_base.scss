@@ -22,7 +22,7 @@ a,
 li,
 label,
 button{
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: variable.$text;
 }
 
@@ -43,4 +43,14 @@ h2 {
 
 h3 {
   font-size: 2rem;
+}
+
+@media screen and (min-width:768px) {
+  p,
+  a,
+  li,
+  label,
+  button{
+    font-size: 1.8rem;
+  }
 }
