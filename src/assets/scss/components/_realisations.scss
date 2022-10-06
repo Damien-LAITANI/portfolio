@@ -6,10 +6,11 @@
   .main__competences__title {
     margin-bottom: 1rem;
   }
-
+  
   .realisation__card {
     background-color: #eaf8f7;
     width: 90%;
+    max-width: 27rem;
     margin: 2.5rem auto;
     padding: 1rem;
     text-align: center;
@@ -34,6 +35,15 @@
     .card__text {
       text-align: left;
       line-height: 1.2;
+    }
+  }
+}
+
+@media screen and (min-width:600px) {
+  .main__realisations {
+    .container__cards {
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 }
