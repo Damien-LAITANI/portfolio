@@ -11,12 +11,12 @@
     flex: 1;
 
     .nav__menu {
-      margin-bottom: 3.2rem;
+      margin-bottom: 10rem;
 
       .nav__menu__item {
         width: 50%;
         background-color: #fff;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         padding: 1rem;
         text-transform: uppercase;
         font-size: 1.6rem;
@@ -54,16 +54,109 @@
 
     .header__description {
       margin-top: 15rem;
-      padding: 0.5rem;
+      padding: 1.5rem;
 
       .full-name {
-        padding-left: 1rem;
+        //padding-left: 1rem;
       }
 
       .job {
-        width: 95%;
-        margin: 4.7rem auto;
+        margin: 3.9rem 0;
         line-height: 1.4;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:768px){
+  .header {
+    .header__right-side {
+      .header__picture img {
+        right: 35px;
+        top: 25px;
+      }
+      .header__description {
+        .full-name {
+          font-size: 2rem;
+        }
+
+        .job {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .header__left-side {
+      .nav__menu {
+        margin-bottom: 8rem;
+        .nav__menu__item {
+          width: 55%;
+          height: 5rem;
+          line-height: 1.8;
+          margin-bottom: 2.5rem;
+        }
+      }
+      .fa-angle-down {
+        right: 35px;
+        bottom: 15px;
+        font-size: 7rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .header {
+    .header__left-side {
+      .nav__menu {
+        margin-bottom: 8rem;
+        .nav__menu__item {
+          width: 75%;
+          height: 5rem;
+          line-height: 1.8;
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+
+    .header__right-side {
+      .header__description {
+        margin-top: 14rem;
+        .full-name {
+          padding-left: 19rem;
+          font-size: 3rem;
+        }
+
+        .job {
+          text-align: center;
+          margin-top: 4.5rem;
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .header {
+    .header__left-side {
+      .nav__menu {
+        margin-bottom: 10rem;
+
+        .nav__menu__item {
+          width: 75%;
+          height: 6rem;
+          line-height: 2.5;
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+
+    .header__right-side {
+      .header__picture {
+        img {
+          width: 250px;
+        }
       }
     }
   }
