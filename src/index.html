@@ -19,14 +19,14 @@
             <div class="header__left-side">
                 <nav class="header__nav-menu">
                     <ul class="nav__menu">
-                        <li class="nav__menu__item">A propos</li>
-                        <li class="nav__menu__item">Réalisations</li>
-                        <li class="nav__menu__item">Compétences</li>
-                        <li class="nav__menu__item">Contact</li>
+                        <li class="nav__menu__item"><a href="#a-propos">A propos</a> </li>
+                        <li class="nav__menu__item"><a href="#realisation">Réalisations</a> </li>
+                        <li class="nav__menu__item"><a href="#competences">Compétences</a> </li>
+                        <li class="nav__menu__item"><a href="#contact">Contact</a> </li>
                     </ul>
                 </nav>
                 <div class="arrow__bottom">
-                    <i class="fa-solid fa-angle-down"></i>
+                    <a href="#a-propos"><i class="fa-solid fa-angle-down"></i></a>
                 </div>
             </div>
             <div class="header__right-side">
@@ -40,12 +40,12 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__apropos">
+            <section id="a-propos" class="section main__apropos">
                 <h2 class="main__apropos__title">à propos</h2>
                 <p class="main__apropos__text">Après 10 ans comme Pâtissier, me voilà maintenant développeur Web junior.</p>
                 <p class="main__apropos__text">Je suis actuellement à la recherche d'une alternance pour engranger ma première expérience en entreprise. Grâce à un projet de groupe (5 membres) élaboré lors de ma formation chez O'clock, j'ai pu entrapercevoir le monde du développement web durant un mois. Nous avons travaillé avec la méthode Scrum suivant le développement Agile. Un mois divisé en 4 sprints pour créer une application web en partant d'une simple idée, en passant par un MVP et jusqu'à sa mise en ligne.</p>
             </section>
-            <section class="main__realisations">
+            <section id="realisation" class="section main__realisations">
                 <h2 class="main__competences__title">Réalisations</h2>
                 <div class="realisation__card">
                     <img class="card__picture" src="./assets/images/capture_cat_to_home.png" alt="Capture d'écran du site Cat to home" width="200px">
@@ -68,7 +68,7 @@
                     <p class="card__text text--hidden">Mini jeu réalisé avant la formation O'clock, en Vanilla JS</p>
                 </div>
             </section>
-            <section class="main__competences">
+            <section id="competences" class="section main__competences">
                 <h2 class="main__competences__title">Compétences</h2>
                 <div class="competence competences__logos">
                     <h3 class="competences__title competences__title__logos"><i class="fa-solid fa-graduation-cap"></i> Hards Skills</h3>
@@ -136,7 +136,7 @@
                 </div>
 
             </section>
-            <section class="main__contact">
+            <section id="contact" class="section main__contact">
                 <h2 class="main__competences__title">Contact</h2>
                 <div class="for__contact">
                     <form action="" method="post">
