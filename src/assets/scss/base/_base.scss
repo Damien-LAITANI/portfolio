@@ -8,10 +8,15 @@ html {
   font-size: 62.5%;
 }
 
+.main {
+  padding: 2.5rem 1rem;
+}
+
 p,
 a,
 li,
-label{
+label,
+button{
   font-size: 1.8rem;
   font-family: variable.$text;
 }
@@ -20,6 +25,7 @@ h1,
 h2,
 h3 {
   font-family: variable.$title;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -27,9 +33,9 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }

@@ -1,3 +1,6 @@
+@use '../abstract/mixin';
+@use '../abstract/variable';
+
 .main__realisations {
     margin-top: 1rem;
 
@@ -11,11 +14,11 @@
     margin: 2.5rem auto;
     padding: 1rem;
     text-align: center;
-    box-shadow: 1px 2px 5px #74c2c6;
+    @include mixin.box-shadow;
     border-radius: 0.5rem;
 
     .card__picture {
-      border: 1px solid #74c2c6;
+      border: 1px solid variable.$secondary;
     }
 
     .card__picture,
