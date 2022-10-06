@@ -24,11 +24,47 @@
 
     .btn__contact {
       width: 50%;
+      max-width: 12.1rem;
       padding: 0.2rem 0.6rem;
       border: 2px solid variable.$secondary;
       border-radius: 0.5rem;
       background-color: variable.$primary;
 
     }
+  }
+
+  .contact__items {
+    text-align: center;
+    .contact__item {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width:768px) {
+  .main__contact {
+    .container__contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .form__contact {
+        flex: 1.5;
+
+        & input {
+          height: 4rem;
+        }
+      }
+
+      .contact__items {
+        flex: 1;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .contact__item a {
+    font-size: 2rem;
   }
 }
