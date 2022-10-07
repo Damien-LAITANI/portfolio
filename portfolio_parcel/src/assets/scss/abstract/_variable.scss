@@ -1,0 +1,9 @@
+@use "sass:color";
+// Polices
+$title: 'Montserrat', sans-serif;
+$text: 'Roboto', sans-serif;
+
+// Couleurs
+$primary: #eaf8f7;
+$secondary: #74c2c6;
+$tertiary: color.scale($secondary, $lightness: 50%);

@@ -1,0 +1,4 @@
+node_modules
+portfolio/portfolio_parcel/.parcel-cache
+portfolio/portfolio_parcel/dist
+../.idea

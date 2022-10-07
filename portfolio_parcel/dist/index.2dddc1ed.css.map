@@ -1,0 +1,1 @@
+{"mappings":"AACE","sources":["src/assets/css/style.scss"],"sourcesContent":["body {\r\n  .container {\r\n    width: 100vw;\r\n    height: 100vh;\r\n    background-color: #000;\r\n  }\r\n}"],"names":[],"version":3,"file":"index.2dddc1ed.css.map","sourceRoot":"/__parcel_source_root/"}
