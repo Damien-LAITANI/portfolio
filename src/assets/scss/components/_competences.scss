@@ -1,5 +1,7 @@
-.main__competences {
+@use "../abstract/variable";
 
+.main__competences {
+  background-color: variable.$primary;
   .main__competences__title {
     margin-bottom: 2.5rem;
   }
