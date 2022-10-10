@@ -1,6 +1,12 @@
 <template>
   <div class="container">
     <HeaderLayout />
+    <main class="main">
+      <aProposLayout />
+      <realisationLayout />
+      <competenceLayout />
+      <contactLayout />
+    </main>
     <FooterLayout />
   </div>
 </template>
@@ -9,9 +15,17 @@
 import './assets/scss/base/_reset.scss';
 import HeaderLayout from "@/components/templates/HeaderLayout";
 import FooterLayout from "@/components/templates/FooterLayout";
+import AProposLayout from "@/components/sections/aProposLayout";
+import RealisationLayout from "@/components/sections/realisationLayout";
+import CompetenceLayout from "@/components/sections/competenceLayout";
+import ContactLayout from "@/components/sections/contactLayout";
 export default {
   name: 'App',
   components: {
+    ContactLayout,
+    CompetenceLayout,
+    RealisationLayout,
+    AProposLayout,
     FooterLayout,
     HeaderLayout
   }
