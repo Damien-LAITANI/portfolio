@@ -1,26 +1,85 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <HeaderLayout />
+    <FooterLayout />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import './assets/scss/base/_reset.scss';
+import HeaderLayout from "@/components/templates/HeaderLayout";
+import FooterLayout from "@/components/templates/FooterLayout";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FooterLayout,
+    HeaderLayout
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.main {
+
+  .section {
+    padding: 2.5rem 1rem;
+  }
+}
+
+p,
+a,
+li,
+label,
+button{
+  font-size: 1.6rem;
+  font-family: $text;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $title;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width:768px) {
+  p,
+  a,
+  li,
+  label,
+  button{
+    font-size: 1.8rem;
+  }
 }
 </style>
