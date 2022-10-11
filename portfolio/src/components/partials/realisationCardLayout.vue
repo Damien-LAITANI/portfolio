@@ -1,0 +1,138 @@
+<template>
+  <div class="realisation__card">
+    <img class="card__picture" :src="picture.src" :alt="picture.alt" width="200px">
+    <h3 class="card__title">{{title}}</h3>
+    <div class="card__labels">
+      <p class="card__label" v-for="label in labels.name" :key="label" :class="labels.class">{{label}}</p>
+    </div>
+    <p class="card__text text--hidden" v-html="text"></p>
+    <a :href="link" class="btn__realisation">Découvrir</a>
+  </div>
+</template>
+<script>
+export default {
+  name: 'realisationCardLayout',
+  props: {
+    picture: Object,
+    title: String,
+    labels: Object,
+    text: String,
+    link:String
+  }
+}
+</script>
+<style scoped lang="scss">
+.realisation__card {
+  position: relative;
+  background-color: #eaf8f7;
+  width: 90%;
+  max-width: 30rem;
+  margin: 2.5rem auto;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  @include box-shadow;
+
+  .card__picture {
+    border: 1px solid $secondary;
+  }
+
+  .card__picture {
+    margin-bottom: 1.5rem;
+  }
+
+  .card__title {
+    margin-bottom: 0.5rem;
+  }
+
+  .card__title a {
+    display: inline-block;
+    font-size: 2rem;
+    color: black;
+    line-height: 1.2;
+  }
+
+  .card__labels {
+    text-align: right;
+
+    & .card__label {
+      width: max-content;
+      margin-bottom: 0.2rem;
+      padding: 0.5rem 1rem;
+      text-align: right;
+      font-size: 1.5rem;
+      border-radius: 1rem;
+      color: #fff;
+      background-color: $secondary;
+    }
+  }
+
+  .card__text {
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+    text-align: left;
+    line-height: 1.4;
+  }
+
+  .btn__realisation {
+    position: absolute;
+    bottom: 5px;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: $secondary;
+    border: 2px solid $tertiary;
+    border-radius: 2rem;
+  }
+}
+
+@media (hover: hover) {
+  .main__realisation {
+    .realisation__card {
+      height: 38rem;
+      max-width: 30rem;
+      overflow: hidden;
+
+      & .card__picture {
+        width: 25rem;
+        transition: width 0.8s ease-out;
+      }
+
+      & .card__title {
+        margin-bottom: 2rem;
+      }
+
+      & .card__labels {
+        & .label__laravel {
+          margin-top: 4.7rem;
+        }
+
+        & .label__js {
+          margin-top: 4.7rem;
+        }
+      }
+
+      & .btn__realisation {
+        bottom: -35px;
+        transition: bottom 0.2s ease-out;
+      }
+
+      &:hover {
+        & .card__picture {
+          width: 5rem;
+          transform-origin: top;
+          transition: width 0.6s ease-out;
+        }
+
+        & .btn__realisation {
+          bottom: 5px;
+          transition: bottom 0.2s 0.4s ease-out;
+        }
+      }
+    }
+  }
+}
+</style>
