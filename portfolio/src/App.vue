@@ -54,6 +54,8 @@ p,
 a,
 li,
 label,
+input,
+textarea,
 button{
   font-size: 1.6rem;
   font-family: $text;
@@ -85,6 +87,10 @@ h2 {
 
 h3 {
   font-size: 1.8rem;
+}
+
+.loading {
+  cursor: progress !important;
 }
 
 @media screen and (min-width:768px) {
