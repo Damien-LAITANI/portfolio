@@ -3,10 +3,15 @@
     <div class="header__left-side">
       <nav class="header__nav-menu">
         <ul class="nav__menu">
-          <li class="nav__menu__item"><a href="#a-propos">A propos</a> </li>
+          <navLinkHeaderLayout
+            v-for="navItem in navItems" :key="navItem.title"
+            :link="navItem.link"
+            :title="navItem.title"
+          />
+          <!--<li class="nav__menu__item"><a href="#a-propos">A propos</a> </li>
           <li class="nav__menu__item"><a href="#realisation">Réalisations</a> </li>
           <li class="nav__menu__item"><a href="#competences">Compétences</a> </li>
-          <li class="nav__menu__item"><a href="#contact">Contact</a> </li>
+          <li class="nav__menu__item"><a href="#contact">Contact</a> </li>-->
         </ul>
       </nav>
       <div class="arrow__bottom">
@@ -26,8 +31,18 @@
 </template>
 
 <script>
+
+import {navItems} from "@/assets/js/data";
+import NavLinkHeaderLayout from "@/components/partials/navLinkHeaderLayout";
+
 export default {
-  name: 'HeaderLayout'
+  name: 'HeaderLayout',
+  components: {NavLinkHeaderLayout},
+  data() {
+    return {
+      navItems: navItems
+    }
+  }
 }
 </script>
 
@@ -60,180 +75,140 @@ export default {
   flex-direction: column-reverse;
   background-color: $primary;
 
-.header__left-side {
-  flex: 1;
+  .header__left-side {
+    flex: 1;
 
-.nav__menu {
-  margin-bottom: 10rem;
+    .nav__menu {
+      margin-bottom: 10rem;
+    }
 
-.nav__menu__item {
-  width: 50%;
-  background-color: #fff;
-  margin-bottom: 1.5rem;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  border-radius: 0 0.2rem 0.2rem 0;
-  transition:0.3s ease-out;
-  @include box-shadow;
-
-& a {
-    display: inline-block;
-    padding: 1rem;
-    width: 100%;
-    height: 100%;
+    .fa-angle-down {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-size: 5rem;
+      color: black;
+    }
   }
-}
-}
 
-.fa-angle-down {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-  font-size: 5rem;
-  color: black;
-}
-}
+  .header__right-side {
+    flex: 3;
 
-.header__right-side {
-  flex: 3;
+    .header__picture img {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      border-radius: 5%;
+      @include box-shadow;
+    }
 
-.header__picture img {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  border-radius: 5%;
-  @include box-shadow;
-}
+    .header__description {
+      margin-top: 15rem;
+      padding: 1.5rem;
 
-.header__description {
-  margin-top: 15rem;
-  padding: 1.5rem;
+      .full-name {
+        transform: translateX(-1000px);
+        animation: animation_header 1.2s 0.3s ease-out forwards;
+      }
 
-.full-name {
-  transform: translateX(-1000px);
-  animation: animation_header 1.2s 0.3s ease-out forwards;
-}
-
-.job {
-  margin: 3.9rem 0;
-  line-height: 1.4;
-  animation: animation_header 1.5s ease-out;
-}
-}
-}
+      .job {
+        margin: 3.9rem 0;
+        line-height: 1.4;
+        animation: animation_header 1.5s ease-out;
+      }
+    }
+  }
 }
 
 @media screen and (min-width:768px){
   .header {
-  .header__right-side {
-  .header__picture img {
-    right: 35px;
-    top: 25px;
-  }
-  .header__description {
-  .full-name {
-    font-size: 2rem;
-  }
+    .header__right-side {
+      .header__picture img {
+        right: 35px;
+        top: 25px;
+      }
 
-  .job {
-    font-size: 3rem;
-    animation-name: animation_header--md;
-  }
-}
-}
+      .header__description {
+        .full-name {
+          font-size: 2rem;
+        }
 
-.header__left-side {
-.nav__menu {
-  margin-bottom: 8rem;
-.nav__menu__item {
-  width: 55%;
-  height: 5rem;
-  line-height: 1.8;
-  margin-bottom: 2.5rem;
-}
-}
-.fa-angle-down {
-  right: 35px;
-  bottom: 15px;
-  font-size: 7rem;
-  transition: 0.3s ease-out;
-}
-}
-}
+        .job {
+          font-size: 3rem;
+          animation-name: animation_header--md;
+        }
+      }
+    }
+
+    .header__left-side {
+      .nav__menu {
+        margin-bottom: 8rem;
+      }
+
+      .fa-angle-down {
+        right: 35px;
+        bottom: 15px;
+        font-size: 7rem;
+        transition: 0.3s ease-out;
+      }
+    }
+  }
 }
 
 @media screen and (min-width:1024px) {
   .header {
-  .header__left-side {
-  .nav__menu {
-    margin-bottom: 8rem;
-  .nav__menu__item {
-    width: 75%;
-    height: 5rem;
-    line-height: 1.8;
-    margin-bottom: 2.5rem;
+    .header__left-side {
+      .nav__menu {
+        margin-bottom: 8rem;
+      }
+    }
+
+    .header__right-side {
+      .header__description {
+        margin-top: 14rem;
+
+        .full-name {
+          padding-left: 19rem;
+          font-size: 3rem;
+        }
+
+        .job {
+          text-align: center;
+          margin-top: 4.5rem;
+          font-size: 4rem;
+        }
+      }
+    }
   }
-}
-}
-
-.header__right-side {
-.header__description {
-  margin-top: 14rem;
-.full-name {
-  padding-left: 19rem;
-  font-size: 3rem;
-}
-
-.job {
-  text-align: center;
-  margin-top: 4.5rem;
-  font-size: 4rem;
-}
-}
-}
-}
 }
 
 @media screen and (min-width:1440px) {
   .header {
-  .header__left-side {
-  .nav__menu {
-    margin-bottom: 10rem;
+    .header__left-side {
+      .nav__menu {
+        margin-bottom: 10rem;
+      }
+    }
 
-  .nav__menu__item {
-    width: 75%;
-    height: 6rem;
-    margin-bottom: 2.5rem;
 
-& a {
-    vertical-align: text-top;
+    .header__right-side {
+      .header__picture {
+        img {
+          width: 250px;
+        }
+      }
+
+      .header__description {
+        .job {
+          font-size: 4rem;
+          animation-name: animation_header--lg;
+        }
+      }
+    }
   }
-}
-}
-}
-
-.header__right-side {
-.header__picture {
-img {
-  width: 250px;
-}
-}
-
-.header__description {
-.job {
-  font-size: 4rem;
-  animation-name: animation_header--lg;
-}
-}
-}
-}
 }
 
 @media (hover: hover) {
-  .nav__menu__item:hover {
-    opacity: 0.4;
-  }
-
   .fa-angle-down:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-out;

@@ -1,5 +1,4 @@
 
-
 export const datas = [
     {
         picture: {
@@ -60,5 +59,24 @@ export const datas = [
         },
         text: 'Mini jeu réalisé avant la formation O\'clock, en suivant une formation sur Udemy, en <strong>Vanilla JS</strong>',
         link: 'https://damien-laitani.github.io/Snake-game-In-VanillaJS'
+    },
+]
+
+export const navItems = [
+    {
+        link: '#a-propos',
+        title: 'A propos'
+    },
+    {
+        link: '#realisation',
+        title: 'Réalisations'
+    },
+    {
+        link: '#competences',
+        title: 'Compétences'
+    },
+    {
+        link: '#contact',
+        title: 'Contact'
     },
 ]
