@@ -17,7 +17,7 @@ export const datas = [
     },
     {
         picture: {
-            src: require('@/assets/images/photo_profil.jpg'),
+            src: require('@/assets/images/capture_backoffice_application.png'),
             alt: 'Capture d\'écran du Backoffice d\'application'
         },
         title: 'Backoffice d\'application',
@@ -32,7 +32,7 @@ export const datas = [
     },
     {
         picture: {
-            src: require('@/assets/images/photo_profil.jpg'),
+            src: require('@/assets/images/capture_memory_game.png'),
             alt: 'Capture d\'écran du jeu Mémorie'
         },
         title: 'Jeu du Memory',
@@ -47,7 +47,7 @@ export const datas = [
     },
     {
         picture: {
-            src: require('@/assets/images/photo_profil.jpg'),
+            src: require('@/assets/images/capture_snake_game.png'),
             alt: 'Capture d\'écran du jeu du serpent'
         },
         title: 'Jeu du serpent',
