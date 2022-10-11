@@ -48,7 +48,6 @@ export default {
   methods: {
     async handleSubmitForm(e) {
       e.preventDefault();
-
       this.error_messages = {};
 
       if (!this.name) {
@@ -66,14 +65,14 @@ export default {
       if (!this.message) {
         this.error_messages = {...this.error_messages, message: 'Veuillez renseigner votre message'};
       } else if (this.message.length < 3 || this.message.length >= 255) {
-        this.error_messages = {...this.error_messages, message: 'Le message doit contenir aux moins 3 caractères'};
+        this.error_messages = {...this.error_messages, message: 'Le message doit contenir au moins 3 caractères'};
       }
 
       if (Object.keys(this.error_messages).length === 0) {
-        const bodyElement = document.querySelector('body');
+        this.toggleClass('body', 'loading');
+        this.toggleClass('btn__contact', 'btn--disabled', '.');
         const btnElement = document.querySelector('.btn__contact');
-        bodyElement.classList.toggle('loading');
-        btnElement.classList.toggle('loading');
+        btnElement.disabled = true;
         const response = await ContactService.sendMail({
           name: this.name,
           email: this.email,
@@ -81,23 +80,30 @@ export default {
         });
 
         if (response) {
-          bodyElement.classList.toggle('loading');
-          btnElement.classList.toggle('loading');
+          this.toggleClass('body', 'loading');
+          this.toggleClass('btn__contact', 'btn--disabled', '.');
+          btnElement.disabled = false;
           const containerMessage = document.querySelector('.container__response_message');
           const responseMessage = containerMessage.querySelector('.response_message');
           containerMessage.style.display = 'block';
+
           if (response.sent) {
             this.name = '';
             this.email ='';
             this.message = '';
             containerMessage.classList.add('container__response_message--success');
-            responseMessage.textContent = 'Votre message a bien été envoyé';
+            responseMessage.textContent = 'Votre message a bien été envoyé.';
           } else {
             containerMessage.classList.add('container__response_message--error');
-            responseMessage.textContent = 'Votre message n\'a pas pu être envoyé, vous pouvez m\'envoyer un e-mail';
+            responseMessage.textContent = 'Votre message n\'a pas pu être envoyé, mais vous pouvez m\'envoyer un e-mail.';
           }
         }
       }
+    },
+
+    toggleClass(elementName, className, prefix = '') {
+      const element = document.querySelector(prefix + elementName);
+      element.classList.toggle(className);
     }
   }
 }
@@ -139,6 +145,9 @@ export default {
       background-color: $primary;
     }
 
+    .btn--disabled {
+      cursor: progress;
+    }
   }
   .container__response_message {
     display: none;
@@ -194,6 +203,10 @@ export default {
 @media (hover: hover) {
   .btn__contact:hover {
     opacity: 0.7;
+  }
+
+  .btn--disabled:hover {
+    opacity: 1;
   }
 
   .contact__item {
