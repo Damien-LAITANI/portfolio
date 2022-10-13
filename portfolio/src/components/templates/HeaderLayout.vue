@@ -8,10 +8,6 @@
             :link="navItem.link"
             :title="navItem.title"
           />
-          <!--<li class="nav__menu__item"><a href="#a-propos">A propos</a> </li>
-          <li class="nav__menu__item"><a href="#realisation">Réalisations</a> </li>
-          <li class="nav__menu__item"><a href="#competences">Compétences</a> </li>
-          <li class="nav__menu__item"><a href="#contact">Contact</a> </li>-->
         </ul>
       </nav>
       <div class="arrow__bottom">
@@ -23,8 +19,8 @@
         <img src="../../assets/images/photo_profil.jpg" alt="photo de profil - damien laitani" width="150px">
       </div>
       <div class="header__description">
-        <p class="full-name">Damien LAITANI</p>
         <h1 class="job">Développeur web et web mobile</h1>
+        <p class="full-name">Damien LAITANI</p>
       </div>
     </div>
   </header>
@@ -78,43 +74,42 @@ export default {
   .header__left-side {
     flex: 1;
 
-    .nav__menu {
-      margin-bottom: 10rem;
-    }
-
-    .fa-angle-down {
+    .arrow__bottom {
       position: absolute;
       bottom: 10px;
       right: 20px;
-      font-size: 5rem;
-      color: black;
+
+      .fa-angle-down {
+        font-size: 5rem;
+        color: black;
+      }
     }
+
   }
 
   .header__right-side {
-    flex: 3;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    flex: 2;
+    margin: 2rem 1rem 0 1rem;
 
-    .header__picture img {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      border-radius: 5%;
-      @include box-shadow;
+    .header__picture {
+      align-self: start;
+      img {
+        margin-left: 1rem;
+        border-radius: 5%;
+        @include box-shadow;
+      }
     }
 
     .header__description {
-      margin-top: 15rem;
-      padding: 1.5rem;
-
-      .full-name {
-        transform: translateX(-1000px);
-        animation: animation_header 1.2s 0.3s ease-out forwards;
-      }
+      padding: 0.5rem;
+      text-align: right;
 
       .job {
-        margin: 3.9rem 0;
+        margin: 3.9rem 0 2rem 0;
         line-height: 1.4;
-        animation: animation_header 1.5s ease-out;
       }
     }
   }
@@ -123,12 +118,18 @@ export default {
 @media screen and (min-width:768px){
   .header {
     .header__right-side {
+      grid-template-columns: 1fr 30rem;
+      grid-template-rows: 1fr;
+      text-align: right;
+
       .header__picture img {
-        right: 35px;
-        top: 25px;
+        margin-right: 1rem;
+        width: 20rem;
       }
 
       .header__description {
+        grid-row: 1;
+
         .full-name {
           font-size: 2rem;
         }
@@ -144,13 +145,15 @@ export default {
       .nav__menu {
         margin-bottom: 8rem;
       }
-
+    .arrow__bottom {
       .fa-angle-down {
         right: 35px;
         bottom: 15px;
         font-size: 7rem;
         transition: 0.3s ease-out;
       }
+    }
+
     }
   }
 }
@@ -165,15 +168,15 @@ export default {
 
     .header__right-side {
       .header__description {
-        margin-top: 14rem;
+        //margin-top: 14rem;
 
         .full-name {
-          padding-left: 19rem;
+          //padding-left: 19rem;
           font-size: 3rem;
         }
 
         .job {
-          text-align: center;
+          //text-align: center;
           margin-top: 4.5rem;
           font-size: 4rem;
         }
@@ -190,7 +193,6 @@ export default {
       }
     }
 
-
     .header__right-side {
       .header__picture {
         img {
@@ -199,8 +201,11 @@ export default {
       }
 
       .header__description {
+        justify-self: center;
+        margin-bottom: 3rem;
+        max-width: max-content;
         .job {
-          font-size: 4rem;
+          font-size: 5rem;
           animation-name: animation_header--lg;
         }
       }

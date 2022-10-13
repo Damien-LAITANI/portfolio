@@ -25,7 +25,7 @@ export default {
 
   & a {
     display: inline-block;
-    padding: 1rem;
+    padding: 2rem 1rem;
     width: 100%;
     height: 100%;
   }
@@ -36,9 +36,13 @@ export default {
     .header__left-side {
       .nav__menu__item {
         width: 55%;
-        height: 5rem;
-        line-height: 1.8;
+        //height: 5rem;
+        //line-height: 1.8;
         margin-bottom: 2.5rem;
+
+        & a {
+          padding: 3rem 1.5rem;
+        }
       }
     }
   }
