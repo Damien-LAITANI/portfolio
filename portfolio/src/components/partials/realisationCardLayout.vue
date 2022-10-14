@@ -121,6 +121,10 @@ export default {
         transition: bottom 0.2s ease-out;
       }
 
+      & .btn__realisation:hover {
+        opacity: 0.7;
+      }
+
       &:hover {
         & .card__picture {
           width: 5rem;

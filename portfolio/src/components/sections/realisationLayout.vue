@@ -27,18 +27,62 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.main__realisation {
-  .main__competences__title {
-    margin-bottom: 1rem;
+.main {
+  .main__realisation {
+    padding: 2.5rem 0;
+    .main__competences__title {
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+    }
+
+    .container__cards {
+      display: flex;
+      gap: 1rem;
+      overflow: auto;
+
+      .realisation__card {
+        min-width: 80vw;
+        margin: 1rem;
+      }
+    }
   }
 }
 
 @media screen and (min-width:600px) {
-  .main__realisation {
-    .container__cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
+  .main {
+    .main__realisation {
+      .container__cards {
+        gap: 2rem;
+
+        .realisation__card {
+          min-width: 50vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .main {
+    .main__realisation {
+      .container__cards {
+        .realisation__card {
+          min-width: 33vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .main {
+    .main__realisation {
+      .container__cards {
+        justify-content: center;
+        .realisation__card {
+          min-width: 20vw;
+        }
+      }
     }
   }
 }
