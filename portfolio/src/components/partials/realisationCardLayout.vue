@@ -10,6 +10,7 @@
   </div>
 </template>
 <script>
+
 export default {
   name: 'realisationCardLayout',
   props: {
@@ -18,15 +19,18 @@ export default {
     labels: Object,
     text: String,
     link:String
-  }
+  },
 }
 </script>
 <style scoped lang="scss">
+
 .realisation__card {
   position: relative;
   background-color: #eaf8f7;
   width: 90%;
   max-width: 30rem;
+  min-width: 80vw;
+  min-height: 50rem;
   margin: 2.5rem auto;
   padding: 1rem;
   text-align: center;
@@ -89,11 +93,18 @@ export default {
   }
 }
 
+@media screen and (min-width:768px) {
+  .realisation__card {
+    max-width: 38rem;
+  }
+}
+
 @media (hover: hover) {
   .main__realisation {
     .realisation__card {
       height: 38rem;
       max-width: 30rem;
+      min-height: 38rem;
       overflow: hidden;
 
       & .card__picture {

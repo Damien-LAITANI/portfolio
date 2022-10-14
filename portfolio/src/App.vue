@@ -33,7 +33,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 * {
   box-sizing: border-box;
 }
@@ -93,6 +92,15 @@ h3 {
   cursor: progress !important;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: $secondary;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $secondary;
+}
+
 @media screen and (min-width:768px) {
   p,
   a,
@@ -102,4 +110,5 @@ h3 {
     font-size: 1.8rem;
   }
 }
+
 </style>
