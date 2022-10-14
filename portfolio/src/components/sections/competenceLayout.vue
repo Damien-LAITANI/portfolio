@@ -123,6 +123,11 @@ export default {
       flex-wrap: wrap;
       gap: 0 6rem;
 
+      .competence,
+      .competences__title {
+        margin-top: 0;
+      }
+
       .competences__item {
         margin-left: 1.5rem;
       }
