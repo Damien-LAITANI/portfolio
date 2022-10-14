@@ -36,13 +36,8 @@ export default {
     .header__left-side {
       .nav__menu__item {
         width: 55%;
-        //height: 5rem;
-        //line-height: 1.8;
+        line-height: 1.3;
         margin-bottom: 2.5rem;
-
-        & a {
-          padding: 3rem 1.5rem;
-        }
       }
     }
   }
