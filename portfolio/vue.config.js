@@ -1,9 +1,10 @@
 const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true
-})
 const path = require('path')
-module.exports = {
+module.exports = defineConfig({
+    transpileDependencies: true,
+    devServer: {
+        host: 'projectname.local'
+    },
     pluginOptions: {
         'style-resources-loader': {
             'preProcessor': 'scss',
@@ -13,4 +14,5 @@ module.exports = {
             ]
         }
     }
-}
+})
+
