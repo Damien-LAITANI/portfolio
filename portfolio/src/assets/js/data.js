@@ -2,6 +2,21 @@
 export const datas = [
     {
         picture: {
+            src: require('@/assets/images/capture_portfolio_damien_laitani.png'),
+            alt: 'Capture d\'écran du Portfolio de Damien Laitani'
+        },
+        title: 'Portfolio',
+        labels: {
+            name: [
+                'Vue.js'
+            ],
+            class: 'label__only__one'
+        },
+        text: 'Portfolio réalisé après ma formation de développeur web, on y retrouve toutes mes réalisations, mes compétences ainsi qu\'une description de mon parcours',
+        link: 'https://damienlaitani.com'
+    },
+    {
+        picture: {
             src: require('@/assets/images/capture_cat_to_home.png'),
             alt: 'Capture d\'écran du site Cat to home'
         },
@@ -25,9 +40,9 @@ export const datas = [
             name: [
                 'Laravel'
             ],
-            class: 'label__laravel'
+            class: 'label__only__one'
         },
-        text: 'Projet réalisé après la formation, utilisant le Framework <strong>Laravel</strong>. <br>Gestion des produits d\'une entreprise fictive, mise en place d\'un <strong>CRUD</strong> avec authentification des utilisateurs.',
+        text: 'Projet réalisé après la formation, utilisant le Framework <strong>Laravel</strong>. <br>Gestion des produits d\'une entreprise fictive, mise en place d\'un <strong>CRUD</strong> avec authentification des utilisateurs',
         link: ''
     },
     {
@@ -40,7 +55,7 @@ export const datas = [
             name: [
                 'Javascript'
             ],
-            class: 'label__js'
+            class: 'label__only__one'
         },
         text: 'Mini jeu réalisé avant la formation O\'clock, en autodidacte, en <strong>Vanilla JS</strong>',
         link: 'https://damien-laitani.github.io/Memory-game-In-VanillaJS'
@@ -55,7 +70,7 @@ export const datas = [
             name: [
                 'Javascript'
             ],
-            class: 'label__js'
+            class: 'label__only__one'
         },
         text: 'Mini jeu réalisé avant la formation O\'clock, en suivant une formation sur Udemy, en <strong>Vanilla JS</strong>',
         link: 'https://damien-laitani.github.io/Snake-game-In-VanillaJS'

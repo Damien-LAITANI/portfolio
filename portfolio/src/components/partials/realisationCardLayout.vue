@@ -118,11 +118,7 @@ export default {
       }
 
       & .card__labels {
-        & .label__laravel {
-          margin-top: 4.7rem;
-        }
-
-        & .label__js {
+        & .label__only__one {
           margin-top: 4.7rem;
         }
       }
