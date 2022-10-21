@@ -33,6 +33,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 * {
   box-sizing: border-box;
 }
@@ -49,7 +50,6 @@ html {
 }
 
 .main {
-
   .section {
     padding: 2.5rem 1rem;
   }
@@ -116,5 +116,4 @@ h3 {
     font-size: 1.8rem;
   }
 }
-
 </style>

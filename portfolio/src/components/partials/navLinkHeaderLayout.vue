@@ -13,6 +13,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+
 .nav__menu__item {
   width: 50%;
   background-color: #fff;

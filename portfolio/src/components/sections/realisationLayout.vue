@@ -64,7 +64,7 @@ export default {
       },
       1440: {
         slidesPerView: 4,
-        //spaceBetween: 20,
+        spaceBetween: 20,
       },
       1920: {
         slidesPerView: 4,
@@ -91,11 +91,7 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
-      //gap: 1rem;
-      //overflow: auto;
       scroll-behavior: smooth;
-
-
 
       .btn__scrollTo {
         position: sticky;
@@ -122,8 +118,6 @@ export default {
   .main {
     .main__realisation {
       .container__cards {
-        //gap: 2rem;
-
         .realisation__card {
           min-width: 40vw;
         }
@@ -148,7 +142,6 @@ export default {
   .main {
     .main__realisation {
       .container__cards {
-        //justify-content: center;
         .realisation__card {
           min-width: 20vw;
         }

@@ -21,38 +21,38 @@ export default {
   padding: 1rem 0;
   margin-top: 2.5rem;
 
-.socials__links {
-
-& a {
-    padding: 0 1rem;
-    font-size: 2.5rem;
-    color: black;
+  .socials__links {
+    & a {
+        padding: 0 1rem;
+        font-size: 2.5rem;
+        color: black;
+      }
   }
-}
-p {
-  margin-top: 1.5rem;
-  font-size: 1rem;
-}
+
+  p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width:1024px) {
   .footer {
-  .socials__links {
-& a {
-    font-size: 3rem;
+    .socials__links {
+      & a {
+        font-size: 3rem;
+      }
+    }
+    p {
+      font-size: 1.3rem;
+    }
   }
-}
-p {
-  font-size: 1.3rem;
-}
-}
 }
 
 @media (hover: hover) {
   .socials__links {
-& a:hover {
-    opacity: 0.7;
+    & a:hover {
+      opacity: 0.7;
+    }
   }
-}
 }
 </style>

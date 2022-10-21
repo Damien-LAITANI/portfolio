@@ -77,6 +77,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+
 .main__competences {
   background-color: $primary;
   .main__competences__title {
@@ -100,7 +101,6 @@ export default {
 
       & p {
         font-size: 1.5rem;
-
       }
     }
   }

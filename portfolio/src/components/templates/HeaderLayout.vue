@@ -16,7 +16,7 @@
     </div>
     <div class="header__right-side">
       <div class="header__picture">
-        <img src="../../assets/images/photo_profil.jpg" alt="photo de profil - damien laitani" width="150px">
+        <img src="../../assets/images/photo_profil.jpg" alt="photo de profil - damien laitani" width="180px">
       </div>
       <div class="header__description">
         <h1 class="job">Développeur web et web mobile</h1>
@@ -33,7 +33,9 @@ import NavLinkHeaderLayout from "@/components/partials/navLinkHeaderLayout";
 
 export default {
   name: 'HeaderLayout',
-  components: {NavLinkHeaderLayout},
+  components: {
+    NavLinkHeaderLayout
+  },
   data() {
     return {
       navItems: navItems
@@ -44,27 +46,6 @@ export default {
 
 <style scoped lang="scss">
 
-@keyframes animation_header {
-  0% {transform: translateX(-290px)}
-  60% {transform: translateX(40px)}
-  80% {transform: translateX(-15px)}
-  100% {transform: translateX(0)}
-}
-
-@keyframes animation_header--md {
-  0% {transform: translateX(-1000px)}
-  60% {transform: translateX(45px)}
-  80% {transform: translateX(-20px)}
-  100% {transform: translateX(0)}
-}
-
-@keyframes animation_header--lg {
-  0% {transform: translateX(-1500px)}
-  60% {transform: translateX(45px)}
-  80% {transform: translateX(-20px)}
-  100% {transform: translateX(0)}
-}
-
 .header {
   height: 100vh;
   display: flex;
@@ -74,6 +55,9 @@ export default {
   .header__left-side {
     flex: 1;
 
+    .header__nav-menu {
+      margin: 5rem 0;
+    }
     .arrow__bottom {
       position: absolute;
       bottom: 10px;
@@ -84,17 +68,13 @@ export default {
         color: black;
       }
     }
-
   }
 
   .header__right-side {
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-    align-items: center;
-    flex: 2;
     margin: 2rem 1rem 0 1rem;
 
     .header__picture {
+      margin: 1rem;
       align-self: start;
       img {
         margin-left: 1rem;
@@ -117,11 +97,13 @@ export default {
 
 @media screen and (min-width:768px){
   .header {
-
     .header__right-side {
+      display: grid;
+      align-items: center;
       grid-template-columns: 1fr 30rem;
       grid-template-rows: 1fr;
       text-align: right;
+      flex: 2;
 
       .header__picture img {
         margin-right: 1rem;
@@ -146,15 +128,15 @@ export default {
       .nav__menu {
         margin-bottom: 8rem;
       }
-    .arrow__bottom {
-      .fa-angle-down {
-        right: 35px;
-        bottom: 15px;
-        font-size: 7rem;
-        transition: 0.3s ease-out;
-      }
-    }
 
+      .arrow__bottom {
+        .fa-angle-down {
+          right: 35px;
+          bottom: 15px;
+          font-size: 7rem;
+          transition: 0.3s ease-out;
+        }
+      }
     }
   }
 }
@@ -169,15 +151,11 @@ export default {
 
     .header__right-side {
       .header__description {
-        //margin-top: 14rem;
-
         .full-name {
-          //padding-left: 19rem;
           font-size: 3rem;
         }
 
         .job {
-          //text-align: center;
           margin-top: 4.5rem;
           font-size: 4rem;
         }

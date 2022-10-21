@@ -11,8 +11,8 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.main__apropos {
 
+.main__apropos {
   .main__apropos__title {
     margin-bottom: 1rem;
   }

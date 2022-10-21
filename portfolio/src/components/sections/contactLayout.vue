@@ -127,6 +127,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+
 .main__contact {
   padding-bottom: 2.5rem;
   .main__competences__title {
@@ -167,16 +168,19 @@ export default {
       cursor: progress;
     }
   }
+
   .container__response_message {
     display: none;
     border: 1px solid;
     border-radius: 0.5rem;
     padding: 1.5rem;
   }
+
   .container__response_message--success {
     color: #4f8a10;
     background-color: #dff2bf;
   }
+
   .container__response_message--error {
     color: $error;
     background-color: #ffbaba;
