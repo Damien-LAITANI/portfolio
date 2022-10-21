@@ -2,7 +2,7 @@
   <section id="contact" class="section main__contact">
     <h2 class="main__competences__title">Contact</h2>
     <div class="container__contact">
-      <form @submit="handleSubmitForm" class="form__contact" action="http://portfolio.local/" method="post">
+      <form @submit="handleSubmitFormReCaptcha" class="form__contact" action="http://portfolio.local/" method="post">
         <div class="form__contact__item">
           <label for="name">Votre nom</label>
           <input v-model="name" type="text" name="name" id="name">
@@ -19,7 +19,12 @@
           <p class="form__contact__error">{{error_messages.message}}</p>
         </div>
         <div class="form__contact__item">
-          <button class="btn__contact" type="submit">Envoyer</button>
+          <button class="btn__contact g-recaptcha"
+                  data-sitekey="reCAPTCHA_site_key"
+                  data-callback='onSubmit'
+                  data-action='submit' type="submit">
+            Envoyer
+          </button>
         </div>
         <div class="form__contact__item container__response_message">
           <p class="response_message">{{response_message}}</p>
@@ -46,14 +51,27 @@ export default {
     }
   },
   methods: {
-    async handleSubmitForm(e) {
-      e.preventDefault();
+    handleSubmitFormReCaptcha(event) {
+      const self = this;
+      event.preventDefault();
+      window.grecaptcha.ready(function() {
+        window.grecaptcha.execute('6Ldop5YiAAAAAGpWCOKUi29soCzc5TVBMuMIeJi8', {action: 'submit'}).then(async function(token) {
+          const response = await ContactService.reCaptcha({
+            response: token
+          })
+          if (response.success) {
+            await self.handleSubmitForm();
+          }
+        });
+      });
+    },
+    async handleSubmitForm() {
       this.error_messages = {};
 
       if (!this.name) {
         this.error_messages = {...this.error_messages, name: 'Veuillez renseigner votre nom'};
-      } else if (this.name.length < 3 || this.name.length >= 255) {
-        this.error_messages = {...this.error_messages, name: 'Le nom doit contenir entre 3 et 255 caractères'};
+      } else if (this.name.length < 3 || this.name.length >= 64) {
+        this.error_messages = {...this.error_messages, name: 'Le nom doit contenir entre 3 et 64 caractères'};
       }
 
       if (!this.email) {
@@ -64,7 +82,7 @@ export default {
 
       if (!this.message) {
         this.error_messages = {...this.error_messages, message: 'Veuillez renseigner votre message'};
-      } else if (this.message.length < 3 || this.message.length >= 255) {
+      } else if (this.message.length < 3) {
         this.error_messages = {...this.error_messages, message: 'Le message doit contenir au moins 3 caractères'};
       }
 

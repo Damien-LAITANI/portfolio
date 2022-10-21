@@ -42,6 +42,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.header,
+.main__competences {
+  position: relative;
+  z-index: 999;
+}
+
 .main {
 
   .section {

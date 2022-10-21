@@ -117,6 +117,7 @@ export default {
 
 @media screen and (min-width:768px){
   .header {
+
     .header__right-side {
       grid-template-columns: 1fr 30rem;
       grid-template-rows: 1fr;
