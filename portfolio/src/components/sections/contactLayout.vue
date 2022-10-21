@@ -51,6 +51,7 @@ export default {
     }
   },
   methods: {
+    // Méthode qui permet de récupérer le token qui sera envoyé à l'API de google reCaptcha pour valider le fait que le formulaire et bien envoyé par un utilisateur
     handleSubmitFormReCaptcha(event) {
       const self = this;
       event.preventDefault();
@@ -65,6 +66,7 @@ export default {
         });
       });
     },
+    // Méthode qui vérifie la validité des champs et envoie la requête pour envoyer le mail
     async handleSubmitForm() {
       this.error_messages = {};
 
@@ -118,7 +120,7 @@ export default {
         }
       }
     },
-
+    // Méthode qui récupère un element du DOM et lui ajoute ou retire une classe
     toggleClass(elementName, className, prefix = '') {
       const element = document.querySelector(prefix + elementName);
       element.classList.toggle(className);

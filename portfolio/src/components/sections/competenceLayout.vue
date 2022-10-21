@@ -3,7 +3,7 @@
     <h2 class="main__competences__title">Compétences</h2>
     <div class="container__competences">
       <div class="competence competences__logos">
-        <h3 class="competences__title competences__title__logos"><i class="fa-solid fa-graduation-cap"></i> Hards Skills</h3>
+        <h3 class="competences__title competences__title__logos"><i class="fa-solid fa-graduation-cap"></i> Hard Skills</h3>
         <div class="container__logos">
           <div class="container__logo">
             <img src="../../assets/images/Laravel_logo.svg" alt="Logo du Framework Laravel" width="48px">
@@ -23,11 +23,11 @@
           </div>
           <div class="container__logo">
             <img src="../../assets/images/HTML5_logo.svg" alt="Logo du langage HTML5" width="50px">
-            <p>HTML5</p>
+            <p>HTML</p>
           </div>
           <div class="container__logo">
             <img src="../../assets/images/CSS3_logo.svg" alt="Logo du langage CSS3" width="50px">
-            <p>CSS3</p>
+            <p>CSS</p>
           </div>
 
 
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="competence competences__soft-skills">
-        <h3 class="competences__title competences__title__soft-skills"><i class="fa-solid fa-gears"></i> Softs Skills</h3>
+        <h3 class="competences__title competences__title__soft-skills"><i class="fa-solid fa-gears"></i> Soft Skills</h3>
         <p class="competences__item">Travail en équipe</p>
         <p class="competences__item">Autonomie</p>
         <p class="competences__item">Curiosité</p>
