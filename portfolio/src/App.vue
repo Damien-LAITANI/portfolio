@@ -8,6 +8,7 @@
       <contactLayout />
     </main>
     <FooterLayout />
+    <topButtonLayout />
   </div>
 </template>
 
@@ -19,9 +20,11 @@ import AProposLayout from "@/components/sections/aProposLayout";
 import RealisationLayout from "@/components/sections/realisationLayout";
 import CompetenceLayout from "@/components/sections/competenceLayout";
 import ContactLayout from "@/components/sections/contactLayout";
+import TopButtonLayout from "@/components/partials/topButtonLayout";
 export default {
   name: 'App',
   components: {
+    TopButtonLayout,
     ContactLayout,
     CompetenceLayout,
     RealisationLayout,
