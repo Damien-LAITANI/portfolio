@@ -5,12 +5,38 @@
 </template>
 <script>
 export default {
-  name: 'backButtonLayout'
+  name: 'topButtonLayout',
+  mounted() {
+    const headerElement = document.querySelector('.header');
+    this.createObserver(headerElement);
+  },
+  methods: {
+    goTop() {
+      window.scrollTo(0, 0);
+    },
+    // Création d'un objet IntersectionOberver, pour observer l'intersection d'un element
+    createObserver(element) {
+      const observer = new IntersectionObserver(this.handleIntersect);
+      observer.observe(element);
+    },
+    // Méthode qui rend visible le bouton si le header n'est plus dans l'écran
+    handleIntersect(entries) {
+      const goTopButton = document.querySelector('.container__btn--goTop');
+      const intersectElement = entries[0];
+
+      if (!intersectElement.isIntersecting) {
+        goTopButton.style.visibility = 'visible';
+      } else {
+        goTopButton.style.visibility = 'hidden';
+      }
+    }
+  }
 }
 </script>
 <style scoped lang="scss">
 
 .container__btn--goTop {
+  visibility: hidden;
   background-color: $tertiary;
   position: fixed;
   bottom: 14px;

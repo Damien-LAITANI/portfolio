@@ -40,7 +40,8 @@ export default {
     return {
       navItems: navItems
     }
-  }
+  },
+
 }
 </script>
 
