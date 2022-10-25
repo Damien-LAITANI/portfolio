@@ -12,7 +12,7 @@
 <script>
 
 export default {
-  name: 'realisationCardLayout',
+  name: 'RealisationCardLayout',
   props: {
     picture: Object,
     title: String,

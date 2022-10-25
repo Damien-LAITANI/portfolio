@@ -29,7 +29,7 @@
 <script>
 
 import {navItems} from "@/assets/js/data";
-import NavLinkHeaderLayout from "@/components/partials/navLinkHeaderLayout";
+import NavLinkHeaderLayout from "@/components/partials/NavLinkHeaderLayout";
 
 export default {
   name: 'HeaderLayout',

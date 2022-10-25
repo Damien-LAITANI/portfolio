@@ -7,7 +7,7 @@
 </template>
 <script>
 export default {
-  name: 'aProposLayout',
+  name: 'AboutLayout',
 }
 </script>
 <style scoped lang="scss">

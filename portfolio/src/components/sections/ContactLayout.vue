@@ -38,9 +38,9 @@
   </section>
 </template>
 <script>
-import ContactService from '@/services/contact/contactService';
+import ContactService from '@/services/ContactService';
 export default {
-  name: 'contactLayout',
+  name: 'ContactLayout',
   data() {
     return {
       name: '',

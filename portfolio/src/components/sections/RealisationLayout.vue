@@ -29,7 +29,7 @@
   </section>
 </template>
 <script>
-import RealisationCardLayout from "@/components/partials/realisationCardLayout";
+import RealisationCardLayout from "@/components/partials/RealisationCardLayout";
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import "swiper/css/pagination";
@@ -38,7 +38,7 @@ import { Navigation, Pagination } from "swiper";
 import { datas } from "@/assets/js/data";
 
 export default {
-  name: 'realisationLayout',
+  name: 'RealisationLayout',
   components: {
     RealisationCardLayout,
     Swiper,

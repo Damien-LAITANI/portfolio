@@ -73,7 +73,7 @@
 </template>
 <script>
 export default {
-  name: 'competenceLayout',
+  name: 'CompetenceLayout',
 }
 </script>
 <style scoped lang="scss">

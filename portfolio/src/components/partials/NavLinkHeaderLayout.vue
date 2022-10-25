@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: 'navLinkHeaderLayout',
+  name: 'NavLinkHeaderLayout',
   props: {
     link:String,
     title:String

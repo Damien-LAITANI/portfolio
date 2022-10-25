@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: 'topButtonLayout',
+  name: 'TopButtonLayout',
   mounted() {
     const headerElement = document.querySelector('.header');
     this.createObserver(headerElement);

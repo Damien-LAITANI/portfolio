@@ -2,10 +2,10 @@
   <div class="container">
     <HeaderLayout />
     <main class="main">
-      <aProposLayout />
-      <realisationLayout />
-      <competenceLayout />
-      <contactLayout />
+      <AboutLayout />
+      <RealisationLayout />
+      <CompetenceLayout />
+      <ContactLayout />
     </main>
     <FooterLayout />
     <topButtonLayout />
@@ -16,11 +16,11 @@
 import './assets/scss/base/_reset.scss';
 import HeaderLayout from "@/components/templates/HeaderLayout";
 import FooterLayout from "@/components/templates/FooterLayout";
-import AProposLayout from "@/components/sections/aProposLayout";
-import RealisationLayout from "@/components/sections/realisationLayout";
-import CompetenceLayout from "@/components/sections/competenceLayout";
-import ContactLayout from "@/components/sections/contactLayout";
-import TopButtonLayout from "@/components/partials/topButtonLayout";
+import AboutLayout from "@/components/sections/AboutLayout";
+import RealisationLayout from "@/components/sections/RealisationLayout";
+import CompetenceLayout from "@/components/sections/CompetenceLayout";
+import ContactLayout from "@/components/sections/ContactLayout";
+import TopButtonLayout from "@/components/partials/TopButtonLayout";
 export default {
   name: 'App',
   components: {
@@ -28,7 +28,7 @@ export default {
     ContactLayout,
     CompetenceLayout,
     RealisationLayout,
-    AProposLayout,
+    AboutLayout,
     FooterLayout,
     HeaderLayout
   }
