@@ -113,7 +113,7 @@ export default {
   }
 }
 
-@media (hover: hover) {
+@media (pointer: fine) and (hover: hover) {
   .main__realisation {
     .realisation__card {
       height: 38rem;
