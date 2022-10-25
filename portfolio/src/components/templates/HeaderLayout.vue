@@ -11,12 +11,16 @@
         </ul>
       </nav>
       <div class="arrow__bottom">
-        <a href="#a-propos"><i class="fa-solid fa-angle-down"></i></a>
+        <a href="#a-propos">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon__arrow__bottom" width="5rem" height="5rem">
+          <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+          </svg>
+        </a>
       </div>
     </div>
     <div class="header__right-side">
       <div class="header__picture">
-        <img src="../../assets/images/photo_profil.jpg" alt="photo de profil - damien laitani" width="180px">
+        <img src="../../assets/images/photo_profil.jpg" alt="photo de profil - damien laitani" width="180px" height="180px">
       </div>
       <div class="header__description">
         <h1 class="job">Développeur web et web mobile</h1>
@@ -63,11 +67,6 @@ export default {
       position: absolute;
       bottom: 10px;
       right: 20px;
-
-      .fa-angle-down {
-        font-size: 5rem;
-        color: black;
-      }
     }
   }
 
@@ -109,6 +108,7 @@ export default {
       .header__picture img {
         margin-right: 1rem;
         width: 20rem;
+        height: 20rem;
       }
 
       .header__description {
@@ -131,10 +131,11 @@ export default {
       }
 
       .arrow__bottom {
-        .fa-angle-down {
+        .icon__arrow__bottom {
           right: 35px;
           bottom: 15px;
-          font-size: 7rem;
+          width: 7rem;
+          height: 7rem;
           transition: 0.3s ease-out;
         }
       }
@@ -177,6 +178,7 @@ export default {
       .header__picture {
         img {
           width: 250px;
+          height: 250px;
         }
       }
 
@@ -194,7 +196,7 @@ export default {
 }
 
 @media (hover: hover) {
-  .fa-angle-down:hover {
+  .icon__arrow__bottom:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-out;
   }
