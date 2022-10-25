@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="socials__links">
-      <a href="http://linkedin.com/in/damien-laitani"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://linkedin.com/in/damien-laitani"><i class="fa-brands fa-linkedin-in"></i></a>
       <a href="https://github.com/Damien-LAITANI"><i class="fa-brands fa-github"></i></a>
       <a href="https://twitter.com/DLaitani"><i class="fa-brands fa-twitter"></i></a>
     </div>
