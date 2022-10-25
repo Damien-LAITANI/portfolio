@@ -9,11 +9,15 @@ export const datas = [
         labels: {
             name: [
                 'Vue.js'
-            ],
-            class: 'label__only__one'
+            ]
         },
         text: 'Portfolio réalisé après ma formation de développeur web, on y retrouve toutes mes réalisations, mes compétences ainsi qu\'une description de mon parcours',
-        link: 'https://damienlaitani.com'
+        links: [
+            {
+                link: 'https://github.com/Damien-LAITANI/portfolio',
+                name: 'Github'
+            }
+        ]
     },
     {
         picture: {
@@ -28,7 +32,12 @@ export const datas = [
             ]
         },
         text: 'Projet de fin de formation (o\'clock), réalisé en 1 mois. <br>Méthode <strong>Scrum</strong>. <br>Architecture <strong>Headless</strong> (API REST de Wordpress / <strong>Vue.js</strong>)',
-        link: 'https://cat-to-home.fr'
+        links: [
+            {
+                link: 'https://cat-to-home.fr',
+                name: 'Découvrir'
+            }
+        ]
     },
     {
         picture: {
@@ -39,11 +48,19 @@ export const datas = [
         labels: {
             name: [
                 'Laravel'
-            ],
-            class: 'label__only__one'
+            ]
         },
         text: 'Projet réalisé après la formation, utilisant le Framework <strong>Laravel</strong>. <br>Gestion des produits d\'une entreprise fictive, mise en place d\'un <strong>CRUD</strong> avec authentification des utilisateurs',
-        link: ''
+        links: [
+            {
+                link: 'https://backoffice-app.damienlaitani.com',
+                name: 'Découvrir'
+            },
+            {
+                link: 'https://github.com/Damien-LAITANI/backoffice_MVC_laravel',
+                name: 'Github'
+            }
+        ]
     },
     {
         picture: {
@@ -54,11 +71,19 @@ export const datas = [
         labels: {
             name: [
                 'Javascript'
-            ],
-            class: 'label__only__one'
+            ]
         },
         text: 'Mini jeu réalisé avant la formation O\'clock, en autodidacte, en <strong>Vanilla JS</strong>',
-        link: 'https://damien-laitani.github.io/Memory-game-In-VanillaJS'
+        links: [
+            {
+                link: 'https://damien-laitani.github.io/Memory-game-In-VanillaJS',
+                name: 'Découvrir'
+            },
+            {
+                link: 'https://github.com/Damien-LAITANI/Memory-game-In-VanillaJS',
+                name: 'Github'
+            }
+        ]
     },
     {
         picture: {
@@ -69,11 +94,20 @@ export const datas = [
         labels: {
             name: [
                 'Javascript'
-            ],
-            class: 'label__only__one'
+            ]
         },
         text: 'Mini jeu réalisé avant la formation O\'clock, en suivant une formation sur Udemy, en <strong>Vanilla JS</strong>',
-        link: 'https://damien-laitani.github.io/Snake-game-In-VanillaJS'
+        links: [
+            {
+                link: 'https://damien-laitani.github.io/Snake-game-In-VanillaJS',
+                name: 'Découvrir'
+            },
+            {
+                link: 'https://github.com/Damien-LAITANI/Snake-game-In-VanillaJS',
+                name: 'Github'
+
+            }
+        ]
     },
 ]
 

@@ -21,7 +21,7 @@
             :title="data.title"
             :labels="data.labels"
             :text="data.text"
-            :link="data.link"
+            :links="data.links"
           />
         </swiper-slide>
       </swiper>

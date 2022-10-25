@@ -6,7 +6,7 @@
       <p class="card__label" v-for="label in labels.name" :key="label" :class="labels.class">{{label}}</p>
     </div>
     <p class="card__text text--hidden" v-html="text"></p>
-    <a :href="link" class="btn__realisation">Découvrir</a>
+    <a v-for="linkItem in links" :key="linkItem.name" :href="linkItem.link" :class="[isBoth ? 'btn__realisation btn__'+linkItem.name : 'btn__realisation']">{{linkItem.name}}</a>
   </div>
 </template>
 <script>
@@ -18,8 +18,13 @@ export default {
     title: String,
     labels: Object,
     text: String,
-    link:String
+    links: Array
   },
+  data() {
+    return {
+      isBoth: this.links.length > 1,
+    }
+  }
 }
 </script>
 <style scoped lang="scss">
@@ -57,6 +62,11 @@ export default {
   }
 
   .card__labels {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 1rem;
+    margin-top: 2rem;
     text-align: right;
 
     & .card__label {
@@ -91,6 +101,10 @@ export default {
     border: 2px solid $tertiary;
     border-radius: 2rem;
   }
+
+  .btn__Github {
+    left: 135px;
+  }
 }
 
 @media screen and (min-width:768px) {
@@ -118,9 +132,7 @@ export default {
       }
 
       & .card__labels {
-        & .label__only__one {
           margin-top: 4.7rem;
-        }
       }
 
       & .btn__realisation {
