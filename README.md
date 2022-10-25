@@ -9,4 +9,5 @@ Pour me contacter :
 - E-mail : d.laitani@gmail.com
 
 Lien vers mon Portfolio en ligne : https://damienlaitani.com
+
 Lien vers le Backend du portfolio : https://github.com/Damien-LAITANI/backend_portfolio
