@@ -11,43 +11,43 @@
         </h3>
         <div class="container__logos">
           <div class="container__logo">
-            <img src="../../assets/images/Laravel_logo.webp" alt="Logo du Framework Laravel" width="48px" height="49px">
+            <img src="../../assets/images/laravel_logo.svg" alt="Logo du Framework Laravel" width="48px" height="49px">
             <p>Laravel</p>
           </div>
           <div class="container__logo">
-            <img src="../../assets/images/Vuejs_logo.webp" alt="Logo du Framework Vue.js" width="50px" height="50px">
+            <img src="../../assets/images/vuejs_logo.svg" alt="Logo du Framework Vue.js" width="50px" height="50px">
             <p>Vue.js</p>
           </div>
           <div class="container__logo">
-            <img src="../../assets/images/PHP_logo.webp" alt="Logo du langage PHP" width="92px" height="53px">
+            <img src="../../assets/images/php_logo.svg" alt="Logo du langage PHP" width="92px" height="53px">
             <p>PHP</p>
           </div>
           <div class="container__logo">
-            <img src="../../assets/images/JavaScript_logo.webp" alt="Logo du langage Javascript" width="50px" height="50px">
+            <img src="../../assets/images/javascript.svg" alt="Logo du langage Javascript" width="50px" height="50px">
             <p>Javascript</p>
           </div>
           <div class="container__logo">
-            <img src="../../assets/images/HTML5_logo.webp" alt="Logo du langage HTML5" width="50px" height="50px">
+            <img src="../../assets/images/html_logo.svg" alt="Logo du langage HTML5" width="50px" height="50px">
             <p>HTML</p>
           </div>
           <div class="container__logo">
-            <img src="../../assets/images/CSS3_logo.webp" alt="Logo du langage CSS3" width="50px" height="50px">
+            <img src="../../assets/images/css_logo.svg" alt="Logo du langage CSS3" width="50px" height="50px">
             <p>CSS</p>
           </div>
           <div class="container__logo">
-            <img src="../../assets/images/WordPress_logo.webp" alt="Logo du CMS WordPress" width="50px" height="50px">
+            <img src="../../assets/images/wordpress_logo.svg" alt="Logo du CMS WordPress" width="50px" height="50px">
             <p>Wordpress</p>
           </div>
           <div class="container__logo">
-            <img src="../../assets/images/MySQL_logo.webp" alt="Logo du système de gestion de base de données MySQL" width="98px" height="52px">
+            <img src="../../assets/images/mysql_logo.svg" alt="Logo du système de gestion de base de données MySQL" width="98px" height="52px">
             <p>MySQL</p>
           </div>
           <div class="container__logo">
-            <img src="../../assets/images/Bootstrap_logo.webp" alt="Logo de la librairie Bootstrap" width="62px" height="53px">
+            <img src="../../assets/images/bootstrap_logo.svg" alt="Logo de la librairie Bootstrap" width="62px" height="53px">
             <p>Bootstrap</p>
           </div>
           <div class="container__logo">
-            <img src="../../assets/images/Rest_api_logo.webp" alt="Logo de l'API REST" width="62px" height="53px">
+            <img src="../../assets/images/rest_api_icon_logo.svg" alt="Logo de l'API REST" width="62px" height="53px">
             <p>API REST</p>
           </div>
         </div>

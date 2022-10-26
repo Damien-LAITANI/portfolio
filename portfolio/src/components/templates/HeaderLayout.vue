@@ -21,7 +21,7 @@
     </div>
     <div class="header__right-side">
       <div class="header__picture">
-        <img src="../../assets/images/photo_profil.webp" alt="Photo de profil - Damien Laitani" width="180px" height="180px">
+        <img src="../../assets/images/photo_profil.jpg" alt="Photo de profil - Damien Laitani" width="180px" height="180px">
       </div>
       <div class="header__description">
         <h1 class="job">Développeur web et web mobile</h1>
