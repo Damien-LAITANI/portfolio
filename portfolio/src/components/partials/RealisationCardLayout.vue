@@ -1,6 +1,6 @@
 <template>
   <div class="realisation__card">
-    <img class="card__picture" :src="picture.src" :alt="picture.alt">
+    <img class="card__picture" :src="picture.src" :alt="picture.alt" width="200" height="200">
     <h3 class="card__title">{{title}}</h3>
     <div class="card__labels">
       <p class="card__label" v-for="label in labels.name" :key="label" :class="labels.class">{{label}}</p>
@@ -123,6 +123,7 @@ export default {
 
       & .card__picture {
         width: 25rem;
+        height: auto;
         min-height: auto;
         transition: width 0.8s ease-out;
       }

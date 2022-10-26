@@ -2,7 +2,7 @@
 export const datas = [
     {
         picture: {
-            src: require('@/assets/images/capture_portfolio_damien_laitani.png'),
+            src: require('@/assets/images/capture_portfolio_damien_laitani.webp'),
             alt: 'Capture d\'écran du Portfolio de Damien Laitani'
         },
         title: 'Portfolio',
@@ -21,7 +21,7 @@ export const datas = [
     },
     {
         picture: {
-            src: require('@/assets/images/capture_cat_to_home.png'),
+            src: require('@/assets/images/capture_cat_to_home.webp'),
             alt: 'Capture d\'écran du site Cat to home'
         },
         title: 'Cat to home',
@@ -41,7 +41,7 @@ export const datas = [
     },
     {
         picture: {
-            src: require('@/assets/images/capture_backoffice_application.png'),
+            src: require('@/assets/images/capture_backoffice_application.webp'),
             alt: 'Capture d\'écran du Backoffice d\'application'
         },
         title: 'Backoffice d\'application',
@@ -64,7 +64,7 @@ export const datas = [
     },
     {
         picture: {
-            src: require('@/assets/images/capture_memory_game.png'),
+            src: require('@/assets/images/capture_memory_game.webp'),
             alt: 'Capture d\'écran du jeu Mémorie'
         },
         title: 'Jeu du Memory',
@@ -87,7 +87,7 @@ export const datas = [
     },
     {
         picture: {
-            src: require('@/assets/images/capture_snake_game.png'),
+            src: require('@/assets/images/capture_snake_game.webp'),
             alt: 'Capture d\'écran du jeu du serpent'
         },
         title: 'Jeu du serpent',

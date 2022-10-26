@@ -81,6 +81,7 @@ export default {
 .main {
   .main__realisation {
     padding: 2.5rem 0;
+
     .main__competences__title {
       margin-bottom: 1rem;
       padding-left: 1rem;
