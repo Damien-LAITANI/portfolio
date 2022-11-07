@@ -96,6 +96,23 @@ export default {
   }
 }
 
+@media screen and (max-height:740px) {
+  .header {
+    .header__right-side {
+      .header__description {
+        .job {
+          margin-top: 0;
+        }
+      }
+    }
+    .header__left-side {
+      .header__nav-menu {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+
 @media screen and (min-width:768px){
   .header {
     .header__right-side {
