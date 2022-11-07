@@ -47,7 +47,7 @@ export default {
     margin-bottom: 1.5rem;
     width: 20rem;
     min-height: 20rem;
-    transition: width 0.8s ease-out;
+    transition: width 0.8s cubic-bezier(0.5,0.3,0.1,1);
   }
 
   .card__title {
@@ -125,7 +125,7 @@ export default {
         width: 25rem;
         height: auto;
         min-height: auto;
-        transition: width 0.8s ease-out;
+        transition: width 0.8s cubic-bezier(0.5,0.3,0.1,1);
       }
 
       & .card__title {
