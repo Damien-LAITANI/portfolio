@@ -20,7 +20,7 @@
         </svg>
       </a>
     </div>
-    <p>&copy; 2022. Damien Laitani - portfolio</p>
+    <p>&copy; 2023. Damien Laitani - portfolio</p>
   </footer>
 </template>
 <script>
