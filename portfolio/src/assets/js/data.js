@@ -40,7 +40,7 @@ export const datas = [
 		},
 		title: "Gestion d'absences",
 		labels: {
-			name: ['MongoDB', 'NodeJS', 'React'],
+			name: ['Bootstrap', 'MongoDB', 'NodeJS', 'React'],
 		},
 		text: "Projet de fin de formation (Diginamic), réalisé en une semaine. <br>Méthode <strong>Scrum</strong>. Application de gestion des absences développée à l'aide d'un cahier des charges fourni par l'école.",
 		links: [
@@ -61,7 +61,7 @@ export const datas = [
 		},
 		title: "Backoffice d'application",
 		labels: {
-			name: ['Laravel'],
+			name: ['Bootstrap', 'Laravel'],
 		},
 		text: "Projet réalisé après la formation, utilisant le Framework <strong>Laravel</strong>. <br>Gestion des produits d'une entreprise fictive, mise en place d'un <strong>CRUD</strong> avec authentification des utilisateurs",
 		links: [
