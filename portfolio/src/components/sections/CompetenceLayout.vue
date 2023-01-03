@@ -19,6 +19,10 @@
             <p>Vue.js</p>
           </div>
           <div class="container__logo">
+            <img src="../../assets/images/react_logo.png" alt="Logo de l'API REST" width="60px" height="51px">
+            <p>React</p>
+          </div>
+          <div class="container__logo">
             <img src="../../assets/images/php_logo.svg" alt="Logo du langage PHP" width="92px" height="53px">
             <p>PHP</p>
           </div>
@@ -43,12 +47,20 @@
             <p>MySQL</p>
           </div>
           <div class="container__logo">
+            <img src="../../assets/images/mongoDB_logo.png" alt="Logo de l'API REST" width="62px" height="53px">
+            <p>MongoDB</p>
+          </div>
+          <div class="container__logo">
             <img src="../../assets/images/bootstrap_logo.svg" alt="Logo de la librairie Bootstrap" width="62px" height="53px">
             <p>Bootstrap</p>
           </div>
           <div class="container__logo">
             <img src="../../assets/images/rest_api_icon_logo.svg" alt="Logo de l'API REST" width="62px" height="53px">
             <p>API REST</p>
+          </div>
+          <div class="container__logo">
+            <img src="../../assets/images/nodejs_logo.png" alt="Logo de l'API REST" width="63px" height="60px">
+            <!-- <p>API REST</p> -->
           </div>
         </div>
       </div>
@@ -85,6 +97,21 @@
         </h3>
         <p class="competences__item">Français</p>
         <p class="competences__item">Anglais</p>
+      </div>
+      <div class="competence competences__certification">
+        <h3 class="competences__title competences__title__certification">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="2.5rem" height="2.5rem">
+          <path d="M16 0H144c5.3 0 10.3 2.7 13.3 7.1l81.1 121.6c-49.5 4.1-94 25.6-127.6 58.3L2.7 24.9C-.6 20-.9 13.7 1.9 8.5S10.1 0 16 0zM509.3 24.9L401.2 187.1c-33.5-32.7-78.1-54.2-127.6-58.3L354.7 7.1c3-4.5 8-7.1 13.3-7.1H496c5.9 0 11.3 3.2 14.1 8.5s2.5 11.5-.8 16.4zM432 336c0 97.2-78.8 176-176 176s-176-78.8-176-176s78.8-176 176-176s176 78.8 176 176zM264.4 241.1c-3.4-7-13.3-7-16.8 0l-22.4 45.4c-1.4 2.8-4 4.7-7 5.1L168 298.9c-7.7 1.1-10.7 10.5-5.2 16l36.3 35.4c2.2 2.2 3.2 5.2 2.7 8.3l-8.6 49.9c-1.3 7.6 6.7 13.5 13.6 9.9l44.8-23.6c2.7-1.4 6-1.4 8.7 0l44.8 23.6c6.9 3.6 14.9-2.2 13.6-9.9l-8.6-49.9c-.5-3 .5-6.1 2.7-8.3l36.3-35.4c5.6-5.4 2.5-14.8-5.2-16l-50.1-7.3c-3-.4-5.7-2.4-7-5.1l-22.4-45.4z"/>
+          </svg>
+          Certification
+        </h3>
+        <p class="competences__item">Opquast: 895/1000 
+            <a href="https://directory.opquast.com/fr/certificat/5XQON2" target="_blank" class="opquast__link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1.4rem" height="1.4rem">
+                    <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/>
+                </svg>
+            </a>
+        </p>
       </div>
     </div>
   </section>
@@ -168,5 +195,11 @@ export default {
       }
     }
   }
+}
+
+@media (pointer: fine) and (hover: hover) {
+    .opquast__link:hover {
+        opacity: 0.5;
+    }
 }
 </style>
